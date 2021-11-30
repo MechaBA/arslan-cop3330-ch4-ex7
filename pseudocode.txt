@@ -1,0 +1,37 @@
+
+Function
+int main()
+{
+    char operation;
+
+Variables(numbers)
+    int n1, n2;
+
+Input    cout << "Input first number: \n";
+    cin >> n1;
+Input    cout << "Input second number: \n";
+    cin >> n2;
+Input    cout << "Input operator(+, -, *, /): \n";
+    cin >> operation;
+
+
+List    switch(operation)
+    {
+Entry        case '+':                                                         
+Output        cout <<"\nThe sum of " <<n1<< " and " <<n2<< " is " << n1+n2;
+        break;
+Entry        case '-':
+Output        cout <<"\nThe difference of " <<n1<< " and " <<n2<< " is " << n1-n2;
+        break;
+Entry        case '*':
+Output       cout <<"\nThe product of " <<n1<< " and " <<n2<< " is " <<setprecision(2) << fixed << n1*n2;
+        break;
+Entry        case '/':
+Output        cout <<"\nThe quotient of " <<n1<< " and " <<n2<< " is " <<setprecision(2) << fixed << n1/n2;
+        break;
+        default:
+Output        cout << "\nInvalid input.";
+        break;
+    }
+}
+Result: Creating an expression individually asking for each number (n1, n2) and the operation (+, -, *, /) and making a statement of the result, and a statement for a wrong input.
